@@ -1,0 +1,228 @@
+/* Colores de marca */
+:root {
+    --primary-color: #325a80;
+    --complementary-color: #edaf4e;
+    --accent-color: #ef5168;
+    --background-color: #f5f1ed;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+/* Header y logo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+
+.logo {
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Div Título */
+.titulo-principal {
+    background: url(IMG/Hero\ website.png);
+    height: 400px;
+    background-repeat: no-repeat;
+
+}
+
+.titulo {
+    font-family: 'Qwitcher Grypen', cursive;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 0px  ;
+    font-size: 4.5em;
+}
+
+.subtitulo {
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    color: #363636;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Sección "Sobre mí" */
+#sobre-mi {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.grid-sobre-mi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contenido-sobre-mi {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-sobre-mi {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sección de sesiones */
+#sesiones {
+    padding: 20px;
+    
+}
+
+.cards-sesiones {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.card-sesiones {
+    display: flex;
+    flex: calc(30% - 1em);
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.aclaracion-metas {
+    font-size: 0.7em;
+}
+
+.foto-sesiones {
+    width: 100%;
+    align-self: center;
+}
+
+.boton-reserva {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Sección de reseñas */
+#reseñas {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.grid-reseñas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.grid-reseña {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr; 
+    align-items: center;
+    background-color: #edaf4e;
+    -webkit-text-fill-color: #325a80;
+    padding: 10px;
+    border: 1px solid #325a80;
+    border-radius: 5px;
+}
+
+.foto-reseña {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+
+/* Formulario de contacto */
+form {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links-redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links-redes img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .grid-sesiones {
+        grid-template-columns: 1fr;
+    }
+}
